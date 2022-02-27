@@ -1,3 +1,4 @@
+//initial visualization
 function init() {
     data = [{
       x: [1, 2, 3, 4, 5],
@@ -7,6 +8,8 @@ function init() {
   };
   
   d3.selectAll("#dropdownMenu").on("change", updatePlotly);
+
+  //update plot with other dataset when selected from dropdown
   function updatePlotly() {
     var dropdownMenu = d3.select("#dropdownMenu");
     var dataset = dropdownMenu.property("value");
